@@ -12,28 +12,25 @@ namespace _2._4._3
             int ScoreA = 1, ScoreB = 1;
             while (On == false)
             {
-                if (a > 0)
+                if (a > 1)
                 {
                     a = a / 10;
                     ScoreA++;
                 }
                 else { On = true; } 
             }
-            Console.WriteLine("ScoreB = " + ScoreB);
+            Console.WriteLine("ScoreA = " + ScoreA);
             On = false;
-            while (false)
+            while (On == false)
             {
-                if (b > 0)
+                if (b > 1)
                 {
                     b = b / 10;
                     ScoreB++;
-                } 
-                else
-                {
-                    On = true;
-                    Console.WriteLine("ScoreB = " + ScoreB);
                 }
+                else { On = true; }
             }
+            Console.WriteLine("ScoreA = " + ScoreB);
             if (ScoreA>ScoreB)
             {
                 Console.WriteLine("У A больше цифр");
